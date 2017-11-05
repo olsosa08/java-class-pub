@@ -72,7 +72,15 @@ public class Ex3Driver {
    * @throws java.io.FileNotFoundException
    */
   public static int[][] readFile(String filename) throws FileNotFoundException {
-    throw new UnsupportedOperationException();
+    int counter = 0;
+    int [][]arr = new int[8][];
+    File file = new File(PATH + filename);
+    Scanner input = new Scanner(file);
+    while(input.hasNextLine()){
+        arr[counter][0] = input.nextInt();
+        counter ++;
+    }
+    return arr;
     /*
     10. Open the input file and create a Scanner object to read its content
     20. Read two values (rows and columns) from the first line, if possible
