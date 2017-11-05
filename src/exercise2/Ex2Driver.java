@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @author yasiro01
+ * @author Sam Olson
  */
 public class Ex2Driver {
   public static void main(String args[]) {
