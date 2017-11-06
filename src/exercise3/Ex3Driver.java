@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 /**
  *
- * @author yasiro01
+ * @author Sam Olson
  */
 public class Ex3Driver {
   public static final String PATH = "data/";
@@ -72,13 +72,15 @@ public class Ex3Driver {
    * @throws java.io.FileNotFoundException
    */
   public static int[][] readFile(String filename) throws FileNotFoundException {
-    int counter = 0;
-    int [][]arr = new int[8][];
     File file = new File(PATH + filename);
     Scanner input = new Scanner(file);
+    int[][] arr = new int[8][];
     while(input.hasNextLine()){
-        arr[counter][0] = input.nextInt();
-        counter ++;
+        String aLine = input.nextLine();
+        aLine.split("\\s+");
+        
+        
+        
     }
     return arr;
     /*
@@ -97,6 +99,13 @@ public class Ex3Driver {
    * @return the resulting matrix
    */
   public static int[][] multiply(int[][] matrix1, int[][] matrix2) {
-    throw new UnsupportedOperationException();
+   int [][] matrix3 = new int[8][2];
+   for (int i = 0; i < 8; i++){
+       for (int j= 0; j < 0; ++j){
+           for(int k = 0; k < 2; k++){
+               matrix3[i][j] += matrix1[i][j] * matrix2[k][j];
+           }
+       }
+   }
   }
 }
