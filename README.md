@@ -62,17 +62,27 @@ All instructions are written for Ubuntu 16.04 that you started using in Software
 * [Collections in Java - javatpoint](https://www.javatpoint.com/collections-in-java)
 * [HashMap vs. TreeMap vs. HashTable vs. LinkedHashMap - DZone Java](https://dzone.com/articles/hashmap-vs-treemap-vs)
 
+### Collections
+* **[Collections (Java Platform SE 8 )](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html)**
+* [Lesson: Interfaces (The Java™ Tutorials > Collections)](https://docs.oracle.com/javase/tutorial/collections/interfaces/index.html)
+* [Collections in Java - javatpoint](https://www.javatpoint.com/collections-in-java)
+* [HashMap vs. TreeMap vs. HashTable vs. LinkedHashMap - DZone Java](https://dzone.com/articles/hashmap-vs-treemap-vs)
+
 ### Testing
 * [JUnit 5](http://junit.org/junit5/)
 * **[Unit Testing with JUnit - Tutorial](http://www.vogella.com/tutorials/JUnit/article.html)**
 * [JUnit Test Framework](https://www.tutorialspoint.com/junit/junit_test_framework.htm)
 * [How I Write Tests - Made of Bugs](https://blog.nelhage.com/2016/12/how-i-test/)
+* [JUnit Tutorial for Beginners - Learn Java Unit Testing | Udemy](https://www.udemy.com/junit-tutorial-for-beginners-with-java-examples/)
+* [Getting started · junit-team/junit4 Wiki](https://github.com/junit-team/junit4/wiki/Getting-started)
+ * [java - JUnit test for System.out.println() - Stack Overflow](https://stackoverflow.com/questions/1119385/junit-test-for-system-out-println)
 
 ### OOP
 
 #### Abstraction
 * **[Lesson: Classes and Objects (The Java™ Tutorials > Learning the Java Language)](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)**
 * [Java 101: Classes and objects in Java | JavaWorld](https://www.javaworld.com/article/2979739/learn-java/java-101-classes-and-objects-in-java.html)
+* [Java theory and practice: Hashing it out](https://www.ibm.com/developerworks/java/library/j-jtp05273/index.html)
 
 #### Encapsulation
 * [Encapsulation in Java - GeeksforGeeks](http://www.geeksforgeeks.org/encapsulation-in-java/)
