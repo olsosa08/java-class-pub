@@ -6,5 +6,29 @@ package exercise5;
  * @author yasiro01
  */
 public class College {
-  
+    private String name;
+    private int rank;
+    
+    public College(String name, int rank){
+        this.name = name;
+        this.rank = rank;
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getRank(){
+        return rank;
+    }
+    
+    public int setRank(int newRank){
+        rank = newRank;
+        return rank;
+    }
+    
+    @Override
+    public String toString(){
+        return String.format("%s is ranked #%s", name, rank);
+    }
 }
