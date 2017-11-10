@@ -15,5 +15,29 @@ import java.util.regex.Pattern;
  * @author yasiro01
  */
 public class Roster {
-  
+    private ArrayList<Student> studentList;
+    
+    public Roster(String fileName){
+        String line = "";
+        String splitBy = ",";
+        
+        try{
+        BufferedReader br = new BufferedReader(new FileReader(fileName));
+        while ((line = br.readLine()) != null){
+            String[] stu = line.split(splitBy);
+            studentList.add(new Student(stu[0],stu[1],Double.parseDouble(stu[2])));
+    }
+}
+        catch(FileNotFoundException e){
+            System.out.println(e);
+        }
+        catch(IOException e){
+            System.out.println(e);
+        }
+    }
+    public void printRoster(){
+        for(Student item : studentList){
+            System.out.println(item.toString());
+        }
+    }
 }

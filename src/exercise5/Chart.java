@@ -17,5 +17,31 @@ import java.util.regex.Pattern;
  * @author yasiro01
  */
 public class Chart {
+    private HashMap<Integer, Song> theMap = new HashMap<Integer, Song>();
+    
+    public Chart(String fileName){
+        String line = "";
+        String splitBy = ",";
+        
+        try{
+        BufferedReader br = new BufferedReader(new FileReader(fileName));
+        while ((line = br.readLine()) != null){
+            String[] songPar = line.split(splitBy);
+            Song temp = new Song(songPar[1], songPar[2]);
+            theMap.put(Integer.parseInt(songPar[0]), temp);
+            
+        }
+        }
+        catch (FileNotFoundException e){
+            System.out.println(e);
+        }
+        catch (IOException e){
+            System.out.println(e);
+        }
+    }
 
+    public Song getSong(int i) {
+        return theMap.get(i);
+    }
+    
 }
