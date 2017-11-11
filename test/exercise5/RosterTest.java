@@ -22,7 +22,7 @@ public class RosterTest {
   public void setUp() {
     try {
       allStudents = new Roster("data/roster.csv");
-    } catch (IOException ex) {
+    } catch (IOException ex) { 
       Logger.getLogger(RosterTest.class.getName()).log(Level.SEVERE, null, ex);
     }
   }
