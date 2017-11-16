@@ -1,7 +1,5 @@
 package exercise8;
 
-import java.util.ArrayList;
-
 /**
  * Class DigitalMovie
  * MediaLIbrary code 2
@@ -10,8 +8,8 @@ import java.util.ArrayList;
 public class DigitalMovie extends Movie {
   private String service;
 
-    public DigitalMovie(String service, String director, int releaseYear, long id, String title, int quantity) {
-        super(director, releaseYear, id, title, quantity);
+    public DigitalMovie(String service, String director, int releaseYear, long id, String title) {
+        super(director, releaseYear, id, title,  1);
         this.service = service;
     }
 
@@ -35,10 +33,12 @@ public class DigitalMovie extends Movie {
   public void checkin(){
       
   }
+  
   @Override
   public void checkout(){
       
   }
+  
   @Override
   public String getInfo(){
       return String.format("%s (%d) by %s is avalible via %s",title, releaseYear, director, service);
