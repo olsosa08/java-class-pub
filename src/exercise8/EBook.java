@@ -7,7 +7,25 @@ package exercise8;
  */
 public class EBook extends Book {
   private final String format;
+
+    public EBook(String format, String author, int publishingYear, long id, String title, int quantity) {
+        super(author, publishingYear, id, title, quantity);
+        this.format = format;
+    }
+  @Override
+  public void checkin(){
+      
+  }
   
+  @Override
+  public void checkout(){
+      
+  }
+  
+  @Override
+  public String getInfo(){
+      return String.format("%s (%d). %s is available via %s",author,publishingYear, title, format);
+  }
   /**
    * Get the book format
    * @return the value of format
