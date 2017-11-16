@@ -11,7 +11,7 @@ package exercise7;
  */
 public class Employee {
     protected String name;
-    protected String ssn;
+    protected String ssn = "000-00-0000";
     protected double netPay;
 
     public Employee(String name, String ssn) {
@@ -37,10 +37,6 @@ public class Employee {
 
     public void setSsn(String ssn) {
         this.ssn = ssn;
-    }
-
-    public void setNetPay(double netPay) {
-        this.netPay = netPay;
     }
     
     protected void printWeeklyCheck(){

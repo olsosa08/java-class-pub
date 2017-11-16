@@ -42,6 +42,7 @@ public class HourlyEmployee extends Employee {
     
     @Override
     public void printWeeklyCheck(){
-        
+        double temp = hours * wageRate;
+        System.out.println(temp);
     }
 }
