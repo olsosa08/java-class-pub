@@ -1,5 +1,6 @@
 package exercise10;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 /**
@@ -87,14 +88,29 @@ public class Book {
 }
 
 class ByTitle implements Comparator<Book> {
-    
+    @Override
+    public int compare(Book o1, Book o2){
+        return o1.title.compareTo(o2.title);
+    }
 }
 
 class ByAuthor implements Comparator<Book> {
+    @Override
+    public int compare(Book o1, Book o2){
+        return o1.author.compareTo(o2.author);
+    }
 }
 
 class ByPrice implements Comparator<Book> {
+    @Override
+    public int compare(Book o1, Book o2){
+        return o1.price.compareTo(o2.price);
+    }
 }
 
 class ByYear implements Comparator<Book> {
+    @Override
+    public int compare(Book o1, Book o2){
+        return o1.price.compareTo(o2.price);
+    }
 }
