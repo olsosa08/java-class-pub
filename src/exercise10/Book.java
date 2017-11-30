@@ -11,7 +11,7 @@ public class Book {
     final String title;
     final String author;
     Double price;
-    final int year;
+    final Integer year;
 
     public Book(String title, String author, Double price, int year) {
         this.title = title;
@@ -39,7 +39,7 @@ public class Book {
         return price;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
