@@ -69,17 +69,20 @@ public class Book {
             return false;
         }
         final Book other = (Book) obj;
-        if (this.year != other.year) {
-            return false;
-        }
         if (!Objects.equals(this.title, other.title)) {
             return false;
         }
         if (!Objects.equals(this.author, other.author)) {
             return false;
         }
+        if (!Objects.equals(this.year, other.year)) {
+            return false;
+        }
         return true;
     }
+
+    
+    
     
     @Override
     public String toString(){
@@ -111,6 +114,6 @@ class ByPrice implements Comparator<Book> {
 class ByYear implements Comparator<Book> {
     @Override
     public int compare(Book o1, Book o2){
-        return o1.price.compareTo(o2.price);
+        return o1.year.compareTo(o2.year);
     }
 }
